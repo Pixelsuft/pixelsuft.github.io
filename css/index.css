@@ -53,3 +53,9 @@ body {
 #copyright {
   color: #898989;
 }
+
+#avatar {
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+}
