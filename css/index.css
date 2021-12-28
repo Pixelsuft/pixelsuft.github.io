@@ -3,6 +3,7 @@
 body {
   background: rgb(255, 255, 255);
   background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(190, 244, 255, 1) 100%);
+  text-align: center;
 }
 
 * {
@@ -40,4 +41,15 @@ body {
 
 .topnav .icon {
   display: none;
+}
+
+.hr_split {
+  border: 0;
+  color: rgba(0, 0, 0, 0);
+  border-bottom: 3px dashed #c1c1c1;
+  opacity: .75;
+}
+
+#copyright {
+  color: #898989;
 }
