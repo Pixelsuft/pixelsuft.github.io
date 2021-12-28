@@ -15,7 +15,7 @@ def fast_read(fn: str) -> str:
 
 
 def error404() -> any:
-    return 'Error 404: Requested URL Not Found', 404
+    return fast_read('404.html'), 404
 
 
 def get_path_from_url(url_: str) -> str:
