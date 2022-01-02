@@ -35,11 +35,12 @@ def get_page(*args, **kwargs) -> any:
         if not file_exists(path):
             return error404()
         return fast_read(path), 200
-    if file_exists(path):
+    if file_exists(path) and not os.path.isdir(path):
         return app.send_static_file(path), 200
     if url.endswith('/'):
         url = url[:-1]
     test_path = get_path_from_url(url + '/index.html')
+    print(url, path, test_path)
     if file_exists(test_path):
         return fast_read(test_path), 200
     return error404()
