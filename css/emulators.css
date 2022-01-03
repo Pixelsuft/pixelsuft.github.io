@@ -23,6 +23,17 @@ body {
   background-color: rgba(0, 0, 0, .8);
 }
 
+.list_item {
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.list_item:hover {
+  cursor: pointer;
+  color: rgb(255, 0, 0);
+  transform: scale(1.05) rotate(2deg);
+}
+
 .topnav .link {
   float: left;
   display: block;
